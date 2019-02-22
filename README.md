@@ -1,35 +1,17 @@
-## Working On
+# Working On
 
 The TextCalc project, which was assimilated by [Maven](mavenlibrary.weebly.com)
 
-### Markdown
+## Github
+TextCalc- A simple text-based calculator.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Pure- A subsidary of MicahIncorporated that aims to bring a spectacular Android phone.
 
-```markdown
-Syntax highlighted code block
+MicahIncorporated- The corporate side of me.  Web and logo design.
 
-# Header 1
-## Header 2
-### Header 3
+### Scratch
+Follow me on [Scratch](https://scratch.mit.edu/)
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/micahlt/micahlt.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+@-Archon-
+@MicahLT
+@OpenTeam
