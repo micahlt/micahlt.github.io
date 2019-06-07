@@ -1,0 +1,11 @@
+h1 {
+  font-family: 'Antic', sans-serif;
+  font-size: 500%
+  color: white;
+}
+
+.header {
+  height: 100%;
+  background-color: #6da3f9;
+  background-image: linear-gradient(to bottom right, #6da3f9, #6df9ba); 
+}
