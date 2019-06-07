@@ -1,11 +1,16 @@
 h1 {
   font-family: 'Antic', sans-serif;
-  font-size: 500%
-  color: white;
+  font-size: 12em;
+  color: #ffffff;
 }
 
 .header {
-  height: 100%;
   background-color: #6da3f9;
   background-image: linear-gradient(to bottom right, #6da3f9, #6df9ba); 
+}
+
+h2 {
+  font-family: 'Antic', sans-serif;
+  font-size: 6em;
+  color: #ffffff;
 }
