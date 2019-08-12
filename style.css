@@ -10,17 +10,20 @@ h1 {
   font-family: 'Antic', sans-serif;
   font-size: 7em;
   color: #ffffff;
+  text-align: center;
 }
 
 .header {
   background-color: #6da3f9;
   background-image: linear-gradient(to bottom right, #6da3f9, #6df9ba); 
+  text-align: center;
 }
 
 h2 {
   font-family: 'Antic', sans-serif;
   font-size: 2.7em;
   color: #ffffff;
+  text-align: center;
 }
 
 p {
