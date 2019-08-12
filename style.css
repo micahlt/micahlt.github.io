@@ -22,3 +22,9 @@ h2 {
   font-size: 4em;
   color: #ffffff;
 }
+
+p {
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+  color: black;
+}
