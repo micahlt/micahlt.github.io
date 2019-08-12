@@ -6,14 +6,9 @@
   vertical-align: baseline;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 h1 {
   font-family: 'Antic', sans-serif;
-  font-size: 10.5em;
+  font-size: 7em;
   color: #ffffff;
 }
 
@@ -24,6 +19,6 @@ h1 {
 
 h2 {
   font-family: 'Antic', sans-serif;
-  font-size: 5em;
+  font-size: 4em;
   color: #ffffff;
 }
