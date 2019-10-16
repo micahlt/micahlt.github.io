@@ -1,38 +1,122 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  vertical-align: baseline;
+
+/* Add a black background color to the top navigation */
+.topnav {
+  position: sticky;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: gray;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.topnav img {
+  padding-top: 10px;
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+.header1 {
+  background-image: url("https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=jesus-kiteque-wn-KYaHwcis-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-  font-family: 'Antic', sans-serif;
-  font-size: 7em;
-  color: #ffffff;
   text-align: center;
-}
-
-.header {
-  background-color: #6da3f9;
-  background-image: linear-gradient(to bottom right, #6da3f9, #6df9ba); 
-  text-align: center;
-}
-
-h2 {
-  font-family: 'Antic', sans-serif;
-  font-size: 2.3em;
-  color: #ffffff;
-  text-align: center;
-}
-
-p {
-  text-align: center;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   color: black;
 }
 
-.inform {
-  font-size: 2em; 
+h3 {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  color: #f74848;
+}
+
+
+.about h2 {
+  padding-left: 20px;
+  text-align: left;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.about p {
+  padding-left: 20px;
+  padding-right: 20%;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2em;
+}
+
+.skills {
+  background-color: #f74848;
+}
+
+.skills h2 {
+  padding-right: 20px;
+  padding-top: 20px;
+  text-align: right;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
+
+.skills p {
+  padding-right: 20px;
+  padding-left: 20%;
+  text-align: right;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2em;
+  color: white;
+}
+
+.contact h2 {
+  padding-left: 20px;
+  text-align: left;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.contact p {
+  padding-left: 20px;
+  padding-right: 20%;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2em;
+}
+.contact a {
+  color: #f74848;
 }
