@@ -42,6 +42,10 @@
     display: block;
   }
 
+  .header1 {
+    height: 100%;
+  }
+
   .topnav-centered a {
     position: relative;
     top: 0;
@@ -54,6 +58,7 @@
   background-image: url("https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=jesus-kiteque-wn-KYaHwcis-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 800px;
 }
 
 h1 {
