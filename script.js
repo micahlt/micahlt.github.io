@@ -1,5 +1,5 @@
 var options = {
-  strings: ['designer ^1000', 'developer ^1000', 'musician ^1000', ':) ^1000'],
+  strings: ['designer ^1000', 'developer ^1000', 'musician ^1000', '^1000 :)'],
   typeSpeed: 40
 };
 
