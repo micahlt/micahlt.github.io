@@ -1,4 +1,7 @@
-
+* {
+  margin: 0;
+  padding: 0;
+}
 /* Add a black background color to the top navigation */
 .topnav {
   position: sticky;
@@ -124,4 +127,19 @@ h3 {
 }
 .contact a {
   color: #f74848;
+}
+
+.footer {
+  background-color: #f74848;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.footer p {
+  padding-right: 20px;
+  padding-left: 2%;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+  color: white;
 }
