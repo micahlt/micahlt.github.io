@@ -59,7 +59,7 @@
   }
 
   .topnav {
-  position: sticky;
+  position: initial;
   overflow: hidden;
   background: transparent;
   }
