@@ -3,7 +3,8 @@ document.getElementById('audiotag1').src = song;
 let audio = document.getElementById('audiotag1');
 let playOrPaused = "paused";
 audio.onloadedmetadata = function() {
-  alert(audio.duration);
+  /*
+  alert(audio.duration); */
 };
 /* Above is test code */
 function changePlayButton(){
