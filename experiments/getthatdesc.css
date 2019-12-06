@@ -4,12 +4,12 @@
   text-align: center;
 }
 
-@media (screen and max-width: 600px) {
+/* @media (screen and max-width: 600px) {
   .z-depth-2 {
     width: 600px;
-  }
+  } 
 }
-@media (screen and min-width: 601px) {
+ @media (screen and min-width: 601px) { */
   
 h1 {
   font-family: 'Roboto Mono', sans-serif;
@@ -48,4 +48,4 @@ h3 {
 }
 
 
-}
+
