@@ -14,7 +14,7 @@
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: gray;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -75,13 +75,14 @@
 h1 {
   text-align: center;
   font-family: 'Roboto Mono', monospace;
-  color: black;
+  color: white;
 }
 
 h3 {
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   color: #f74848;
+  background-color: rgba(256,256,256,0.5);
 }
 
 
