@@ -66,7 +66,7 @@
 }
 
 .header1 {
-  background-image: url("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=luca-bravo-XJXWbfSo2f0-unsplash.jpg");
+  background-image: url("https://images.unsplash.com/photo-1487379595640-f04ccae706cd?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=adam-birkett-V4uS8SqCuNM-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
@@ -81,8 +81,7 @@ h1 {
 h3 {
   text-align: center;
   font-family: 'Roboto Mono', monospace;
-  color: #f74848;
-  background-color: rgba(256,256,256,0.5);
+  color: white;
 }
 
 
