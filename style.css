@@ -48,7 +48,7 @@
   }
 
   .header1 {
-    height: 100%;
+    height: 100vh;
   }
 
   .topnav-centered a {
@@ -84,6 +84,9 @@ h3 {
   color: white;
 }
 
+.about a {
+  color: #f74848;
+}
 
 .about h2 {
   padding-left: 20px;
