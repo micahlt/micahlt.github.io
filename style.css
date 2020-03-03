@@ -1,160 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:400,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
-/* Add a black background color to the top navigation */
-.topnav {
-  position: sticky;
-  width: 100%;
-  top: 0;
-  overflow: hidden;
-  background: transparent;
+
+body {
+  background-color: #fff;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: 'Nunito', sans-serif;
+.beta {
+  color: black;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
 }
 
-.topnav img {
-  padding-top: 10px;
-}
-
-/* Centered section inside the top navigation */
-.topnav-centered a {
-  float: none;
-  position: absolute;
+#modalBg {
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  opacity: 0;
+  display: none;
+  transition: 0.5s;
 }
 
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
+#modal {
+  transition: 0.5s;
+  font-family: 'Spartan', sans-serif;
+  color: #FF3A3A;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: #ffb5b5;
+  border-radius: 5px;
+  display: none;
 }
 
-/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
-    float: none;
-    display: block;
-  }
-
-  .header1 {
-    height: 100vh;
-  }
-
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-
-  .topnav {
-  position: initial;
-  overflow: hidden;
-  background: transparent;
-  }
+#modal h4 {
+  padding: 20px;
+  font-size: 3em;
 }
 
-.header1 {
-  background-image: url("https://images.unsplash.com/photo-1487379595640-f04ccae706cd?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=adam-birkett-V4uS8SqCuNM-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
+#modal p {
+  padding: 20px;
+  font-weight: bold;
+}
+
+#modal a {
+  color: #FF3A3A;
+}
+
+.header {
+  height: 100vh;
+  background-color: white;
+}
+
+.typed-cursor {
+  display: none;
+}
+
+img {
+  margin: 0;
 }
 
 h1 {
+  color: #FF3A3A;
+  font-family: 'Spartan', sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  color: #c2c2c2;
+  font-family: 'Spartan', sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+  body {
+    text-align: center;
+  }
+
+  .header-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.chevron-down {
   text-align: center;
-  font-family: 'Roboto Mono', monospace;
-  color: white;
+  width: 50px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
 }
 
-h3 {
+.chevron-down:hover {
+  bottom: 20px;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.headerImg {
+  height: 60px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#content {
+  width: 100vw;
+}
+
+.bg-in {
+  width: 100%;
+  margin: 0;
+  transform: translateY(5px);
+}
+
+#about {
+  background-color: #FF3A3A;
+  color: white;
+  text-align: right;
+  height: 60vh;
+  width: 100vw;
+}
+
+#about h3 {
+  font-family: 'Spartan', sans-serif;
+  font-size: 4em;
+  text-align: right;
+  margin-right: 15px;
+  transform: translateY(-30px);
+}
+
+#about .boxy {
+  box-shadow: rgba(0,0,0,0.3) 0 0 10px;
+  width: 700px;
+  max-width: 40%;
+  background-color: white;
+  float: right;
+  margin-right: 22px;
+  color: black;
+}
+
+.boxy p {
+  padding: 30px;
+  font-family: 'Spartan', sans-serif;
   text-align: center;
-  font-family: 'Roboto Mono', monospace;
+  font-size: 1.3em;
+}
+
+.me {
+  float: left;
+  margin-left: 7%;
+  width: 40%;
+  transform: translateY(-145px);
+}
+
+i {
+  font-size: 40px;
+  color: #FF3A3A;
+  transition: 0.4s;
+  padding: 4vw;
+}
+
+i:hover {
+  color: lightcoral;
+  padding: 5vw;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.social {
+  margin-top: 10px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.boxy a {
+  color: #FF3A3A;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.boxy a:hover {
   color: white;
+  background-color: #FF3A3A;
+  transition: 0.4s;
 }
 
-.about a {
-  color: #f74848;
+#contact {
+  background-color: #FF3A3A;
+  height: 75vh;
+  width: 100vw;
 }
 
-.about h2 {
-  padding-left: 20px;
-  text-align: left;
-  font-family: 'Roboto Mono', monospace;
-}
-
-.about p {
-  padding-left: 20px;
-  padding-right: 20%;
-  text-align: left;
-  font-family: 'Nunito', sans-serif;
-  font-size: 2em;
-}
-
-.skills {
-  background-color: #f74848;
-}
-
-.skills h2 {
-  padding-right: 20px;
-  padding-top: 20px;
-  text-align: right;
-  font-family: 'Roboto Mono', monospace;
+#contact h3 {
+  font-family: 'Spartan', sans-serif;
+  font-size: 4em;
+  text-align: left !important;
   color: white;
+  margin-left: 15px;
+  transform: translateY(-30px);
+  float: none;
 }
 
-.skills p {
-  padding-right: 20px;
-  padding-left: 20%;
-  text-align: right;
-  font-family: 'Nunito', sans-serif;
-  font-size: 2em;
-  color: white;
+#contact .boxy {
+  box-shadow: rgba(0,0,0,0.3) 0 0 10px;
+  width: 700px;
+  max-width: 40%;
+  background-color: white;
+  float: left;
+  margin-left: 22px;
+  color: black;
 }
 
-.skills a {
-  color: #ffc6c2;
-}
+@media screen and (max-width: 600px) {
+  #about .boxy {
+    width: 100%;
+    max-width: 100%;
+    margin: none;
+    float: none;
+    box-shadow: none;
+    background-color: #FF3A3A;
+    color: white;
+  }
 
-.contact h2 {
-  padding-left: 20px;
-  text-align: left;
-  font-family: 'Roboto Mono', monospace;
-}
+  #contact .boxy {
+    width: 100%;
+    max-width: 100%;
+    margin: none;
+    float: none;
+    box-shadow: none;
+    background-color: #FF3A3A;
+    color: white;
+    transform: translateX(-22px);
+  }
 
-.contact p {
-  padding-left: 20px;
-  padding-right: 20%;
-  text-align: left;
-  font-family: 'Nunito', sans-serif;
-  font-size: 2em;
-}
-.contact a {
-  color: #f74848;
-}
+  .boxy p {
+    padding: 30px;
+  }
 
-.footer {
-  background-color: #f74848;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
+  .me {
+    width: 70%;
+    text-align: center;
+    position: relative;
+    left: 43%;
+    transform: translate(-50%, 0%)
+  }
 
-.footer p {
-  padding-right: 20px;
-  padding-left: 2%;
-  text-align: left;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1em;
-  color: white;
+.boxy a {
+  color: #ffb5b5;
+  background-color: #FF3A3A;
+  transition: 0.4s;
+}
 }
