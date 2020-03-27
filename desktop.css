@@ -81,21 +81,22 @@ h1 {
 }
 
 h2 {
-  color: #c2c2c2;
+  color: black;
   font-family: 'Spartan', sans-serif;
   font-weight: normal;
   font-size: 1.2em;
 }
-  body {
-    text-align: center;
-  }
 
-  .header-container {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+body {
+  text-align: center;
+}
+
+.header-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .chevron-down {
   text-align: center;
@@ -125,10 +126,11 @@ html {
 
 #content {
   width: 100vw;
+  text-align: center;
 }
 
 .bg-in {
-  width: 100%;
+  width: 120%;
   margin: 0;
   transform: translateY(5px);
 }
@@ -136,17 +138,19 @@ html {
 #about {
   background-color: #FF3A3A;
   color: white;
-  text-align: right;
-  height: 60vh;
+  text-align: center;
+  height: 100vh;
   width: 100vw;
 }
 
 #about h3 {
   font-family: 'Spartan', sans-serif;
   font-size: 4em;
-  text-align: right;
-  margin-right: 15px;
-  transform: translateY(-30px);
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 5vh;
 }
 
 #about .boxy {
@@ -154,9 +158,10 @@ html {
   width: 700px;
   max-width: 40%;
   background-color: white;
-  float: right;
-  margin-right: 22px;
   color: black;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .boxy p {
@@ -167,10 +172,8 @@ html {
 }
 
 .me {
-  float: left;
-  margin-left: 7%;
   width: 40%;
-  transform: translateY(-145px);
+  max-width: 400px;
 }
 
 i {
@@ -215,12 +218,12 @@ i:hover {
   background-color: #FF3A3A;
   height: 75vh;
   width: 100vw;
+  text-align: center;
 }
 
 #contact h3 {
   font-family: 'Spartan', sans-serif;
   font-size: 4em;
-  text-align: left !important;
   color: white;
   margin-left: 15px;
   transform: translateY(-30px);
@@ -232,48 +235,17 @@ i:hover {
   width: 700px;
   max-width: 40%;
   background-color: white;
-  float: left;
-  margin-left: 22px;
   color: black;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-@media screen and (max-width: 600px) {
-  #about .boxy {
-    width: 100%;
-    max-width: 100%;
-    margin: none;
-    float: none;
-    box-shadow: none;
-    background-color: #FF3A3A;
-    color: white;
-  }
-
-  #contact .boxy {
-    width: 100%;
-    max-width: 100%;
-    margin: none;
-    float: none;
-    box-shadow: none;
-    background-color: #FF3A3A;
-    color: white;
-    transform: translateX(-22px);
-  }
-
-  .boxy p {
-    padding: 30px;
-  }
-
-  .me {
-    width: 70%;
-    text-align: center;
-    position: relative;
-    left: 43%;
-    transform: translate(-50%, 0%)
-  }
-
-.boxy a {
-  color: #ffb5b5;
+.main {
   background-color: #FF3A3A;
-  transition: 0.4s;
+  text-align: center;
 }
+
+.main img {
+  background-color: none;
 }

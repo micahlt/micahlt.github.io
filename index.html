@@ -14,7 +14,8 @@
     <meta name="viewport" content="width=device-width">
     <title>Micah Lindley</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/micahlt/micahlt.github.io/master/IMG_3294.png">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="desktop.css" media="screen and (min-width: 601px)" rel="stylesheet" type="text/css" />
+    <link href="mobile.css" media="screen and (max-width: 600px)" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -22,6 +23,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Nunito&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class = "social">
+        <a href = "https://github.com/micahlt"><i class="fab fa-github-square"></i></a>
+        <a href = "https://dribbble.com/micahlt"><i class="fab fa-dribbble-square"></i></a>
+        <a href = "https://dev.to/micahlt"><i class="fab fa-dev"></i></a>
+        <a href = "https://www.youtube.com/channel/UC6RTYK7Amqv6TpFsfDn-wnQ"><i class="fab fa-youtube-square"></i></a>
+        <a href = "https://blog.micahlindley.com/"><i class="fas fa-rss-square"></i></a>
+      </div>
     <div class = "header">
       <div class = "header-container">
         <img src = "assets/logo.png" class = "headerImg" />
@@ -31,24 +39,19 @@
     <a href = "#goto"><img src = "assets/down.png" class = "chevron-down" /></a>
     </div>
     <div id = "content">
-      <img src = "assets/bg-in.svg" class = "bg-in" id = "goto" />
+      <img src = "assets/bg-in.svg" class = "bg-in" />
+      <div class = "main">
       <div id = "about">
+        <img src = "assets/me.png" id = "goto" class = "me" />
         <h3>Nice to meet you.</h3>
         <br>
         <div class = "boxy">
           <p>Hi!  I'm Micah, a teenage guy who loves programming and web development.  I'm fairly active on GitHub and I write regularly on my blog.  I focus on web technologies like HTML5, CSS, and JavaScript.  Linux and Android are my favorite operating systems.  </p>
         </div>
-        <img src = "assets/me.png" class = "me" />
-        <h3></h3>
-      </div>
-      <div class = "social">
-        <a href = "https://github.com/micahlt"><i class="fab fa-github-square"></i></a>
-        <a href = "https://dribbble.com/micahlt"><i class="fab fa-dribbble-square"></i></a>
-        <a href = "https://dev.to/micahlt"><i class="fab fa-dev"></i></a>
-        <a href = "https://www.youtube.com/channel/UC6RTYK7Amqv6TpFsfDn-wnQ"><i class="fab fa-youtube-square"></i></a>
-        <a href = "https://blog.micahlindley.com/rss.xml"><i class="fas fa-rss-square"></i></a>
       </div>
       </div>
+    </div>
+    <div class = "nonlanding">
       <div id = "contact">
         <h3><br>Let's work together.<br></h3>
         <br>
@@ -56,6 +59,7 @@
           <p>I'm always looking for some work!  Let's talk, and I'd love to help you design a logo, get started with your website, or anything else!  Feel free to contact me via the social media platforms at the top of the page, by phone at <a href = "tel:17319037085">+1 (731)903-7085</a>, or by email at <a href = "mailto:hi@micahlindley.com">hi@micahlindley.com</a>.
         </div>
       </div>
+    </div>
     </div>
     <a href = "javascript:showModal();"><i class="fas fa-question-circle beta"></i></a>
     <div id = "modalBg"></div>
