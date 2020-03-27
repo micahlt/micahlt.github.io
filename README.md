@@ -1,3 +1,5 @@
+![status: alive](https://img.shields.io/badge/status-alive-green) ![updated: 3/10/2020](https://img.shields.io/badge/updated-3/10/20-yellow)
+
 # Main Page
 ## About Me
 
