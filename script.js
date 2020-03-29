@@ -4,6 +4,7 @@ var optionTwo = {
 };
 var typedAgain = new Typed('h2', optionTwo);
 
+/*
 function hideModal() {
   document.getElementById("modal").style.display= "none";
   document.getElementById("modalBg").style.display = "none";
@@ -20,6 +21,7 @@ function showModal() {
 
 document.getElementById("modalBg").addEventListener("click", function() {hideModal();});
 
+*/
 document.getElementById("banner-close").addEventListener("click", function() {
   document.getElementById("covid-banner").style.opacity = "0";
 })
