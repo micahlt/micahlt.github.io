@@ -268,7 +268,7 @@ a {
   font-size: 14px;
 }
 
-.projects-title {
+.section-title {
   color: #ff3a3a;
   font-size: 4em;
 }
@@ -279,9 +279,35 @@ a {
   text-align: center;
   width: 100%;
   background-color: var(--bg-secondary);
+  position: absolute;
+  top: 300vh;
+  left: 0;
 }
 
 .footer p {
   padding: 20px;
   font-weight: 500;
+}
+
+.about .container {
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: min-content;
+}
+
+.about p {
+  font-size: 30px;
+}
+
+.about p a {
+  color: #ff3a3a;
+  text-decoration: var(--bg-primary) underline;
+  transition: 0.4s;
+}
+
+.about p a:hover {
+  text-decoration: #ff3a3a underline;
+  transition: 0.4s;
 }
