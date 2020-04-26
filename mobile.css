@@ -96,11 +96,12 @@ a {
 }
 
 .nav-logo {
+  position: fixed;
+  top: 5vh;
+  left: 8vw;
   height: 5vh;
-  padding-top: 5vh;
-  padding-left: 5vh;
   filter: var(--logo-filter);
-  transform: translateY(-25%);
+  transform: translateY(-70%);
 }
 
 .gridbox {
@@ -108,14 +109,14 @@ a {
 }
 
 .icon-moon {
-  font-size: 30px !important;
+  font-size: 4em !important;
 }
 
 .nav-links {
   position: fixed;
   right: 10%;
   top: 5vh;
-  transform: translateY(-50%);
+  transform: translateY(-70%);
 }
 
 .nav-links a {
@@ -157,30 +158,34 @@ a {
 .header .container {
   text-align: right;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: min-content;
 }
 
 .header-text {
-  text-align: left;
+  text-align: center;
   color: var(--text-primary);
 }
 
 .header-text h2 {
-  font-size: 4.5em;
+  font-size: 7.5em;
   font-weight: 500;
 }
 
 .header-text h1 {
-  font-size: 4.5em;
+  font-size: 7.5em;
   color: #ff3a3a;
+}
+
+.header-text p {
+  font-size: 2em;
 }
 
 .icon-chevrons-down {
   color: var(--text-primary);
-  font-size: 40px !important;
+  font-size: 4em !important;
   position: relative;
   top: 10vh;
   transition: 0.25s;
@@ -254,11 +259,11 @@ a {
 }
 
 .project-title {
-  font-size: 22px;
+  font-size: 2.7em;
 }
 
 .project-info {
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .section-title {
@@ -291,7 +296,7 @@ a {
 }
 
 .about p {
-  font-size: 20px;
+  font-size: 3em;
   color: var(--text-primary);
 }
 
