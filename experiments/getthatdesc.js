@@ -1,7 +1,12 @@
 console.log("We see you're in the console!\nWelcome to the home of the web dev!\n💉 Make sure you don't paste any code here from people you don't trust.");
-function showInfo(e) {
+const showInfo = async (e) => {
   event.preventDefault();
-var xhttp = new XMLHttpRequest();
+  const user = document.getElementById('usrname').value;
+  const path = `https://cors-anywhere.herokuapp.com/api.scratch.mit.edu/users/${user}`;
+  const response = await fetch(path);
+  let json = await response.json();
+  const description = json['profile']
+/*var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var userParsed = JSON.parse(this.responseText);
@@ -11,15 +16,10 @@ xhttp.onreadystatechange = function() {
   };
 };
 xhttp.open("GET", "https://cors-anywhere.herokuapp.com/api.scratch.mit.edu/users/" +document.getElementById('usrname').value, false);
-xhttp.send();
+xhttp.send();*/
 }
-// useless fetch code
-/*
- fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(response => response.json())
-  .then(json => console.log(json)) */
 
-function exportImage() {
+const exportImage = () => {
   console.log('Saving image...');
 domtoimage.toBlob(document.getElementById('card'))
     .then(function (blob) {
