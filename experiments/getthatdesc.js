@@ -3,22 +3,13 @@ const showInfo = async (e) => {
   event.preventDefault();
   const user = document.getElementById('usrname').value;
   const path = `https://cors-anywhere.herokuapp.com/api.scratch.mit.edu/users/${user}`;
+  console.log(`Calling request for user: ${user}`);
   const response = await fetch(path);
   let json = await response.json();
   const description = json['profile']['bio'];
   const profilePic = json['profile']['images']['60x60'];
   document.getElementById("info1").innerHTML = '<p class = "username">' + user + '</p><br><img class = "pfp" src = "' + profilePic + '"><br><br>' + description;
-/*var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    var userParsed = JSON.parse(this.responseText);
-    var description = userParsed.profile['bio'];
-    var profilePic = userParsed.profile['images']['60x60'];
-    document.getElementById("info1").innerHTML = '<p class = "username">' + document.getElementById('usrname').value + '</p><br><img class = "pfp" src = "' + profilePic + '"><br><br>' + description;
-  };
-};
-xhttp.open("GET", "https://cors-anywhere.herokuapp.com/api.scratch.mit.edu/users/" +document.getElementById('usrname').value, false);
-xhttp.send();*/
+  console.log('Successful request');
 }
 
 const exportImage = () => {
