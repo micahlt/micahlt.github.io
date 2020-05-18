@@ -275,18 +275,29 @@ a {
 
 .footer {
   color: var(--text-primary);
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
   width: 100%;
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-primary);
   position: absolute;
   top: 300vh;
   left: 0;
+  transition: 0.2s;
+}
+
+.footer:hover {
+  background-color: var(--bg-secondary);
+  transition: 0.4s;
 }
 
 .footer p {
   padding: 20px;
   font-weight: 500;
+}
+
+.footer p i {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .about .container {
@@ -311,4 +322,102 @@ a {
 .about p a:hover {
   text-decoration: #ff3a3a underline;
   transition: 0.4s;
+}
+
+.footer p a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.footer p a:hover {
+  color: #FF3A3A;
+  transition: 0.1s;
+}
+
+.scratch {
+  padding-left: 10px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 0.1s;
+}
+
+.scratch:hover {
+  filter: contrast(0) grayscale(100%) sepia(100%) hue-rotate(250deg);
+  -webkit-filter: grayscale(100%) sepia(100%) hue-rotate(250deg);
+  transition: 0.1s;
+}
+
+.mobile-shown {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-links a:not(.darkmode-toggle) {
+    display: none;
+  }
+
+  .header-image {
+    display: none;
+  }
+
+  .header, .container, .header-text {
+    text-align: center;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 2em;
+  }
+
+  .project img {
+    width: 65vw;
+  }
+
+  .project-list {
+    height: max-content;
+  }
+
+  .about {
+    position: initial;
+  }
+
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .about .container {
+    position: absolute;
+    top: 340%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: min-content;
+  }
+
+  .project-list .container {
+    top: 200vh;
+  }
+
+  .about p {
+    font-size: 1.2em;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .mobile-shown {
+    display: initial;
+  }
+
+  .footer {
+    top: calc(200% + 180vh);
+  }
 }
