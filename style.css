@@ -235,7 +235,7 @@ a {
 }
 
 .project:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   transition: 0.3s;
 }
 
@@ -395,7 +395,7 @@ a {
 
   .about .container {
     position: absolute;
-    top: 340%;
+    top: 440%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: min-content;
