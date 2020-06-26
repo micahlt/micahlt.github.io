@@ -395,7 +395,7 @@ a {
 
   .about .container {
     position: absolute;
-    top: 440%;
+    top: 340%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: min-content;
