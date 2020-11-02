@@ -3,7 +3,7 @@
   --bg-primary: white;
   --bg-secondary: lightgray;
   --logo-filter: brightness(1);
-  --image-shadow: 0 0 100px rgba(0, 0, 0, 0.24);
+  --image-shadow: 0 0.3em 0.8em rgba(0, 0, 0, 0.3);
 }
 
 body::-webkit-scrollbar {
@@ -145,20 +145,26 @@ a {
   transition: 0.25s;
 }
 
+.content {
+  display: grid;
+  grid-template-rows: 100vh auto auto;
+  grid-template-columns: auto;
+}
+
 .header {
-  height: 100vh;
+  height: 100%;
   z-index: 1;
   animation-name: float-down;
   animation-duration: 3.3s;
   animation-fill-mode: forwards;
   opacity: 0;
   animation-delay: 2s;
+  grid-row: 1;
 }
 
 .container {
   padding-left: 10%;
   padding-right: 10%;
-  width: 80%;
   height: 90vh;
 }
 
@@ -186,6 +192,10 @@ a {
   color: #ff3a3a;
 }
 
+.header .container {
+  position: relative;
+}
+
 .icon-chevrons-down {
   color: var(--text-primary);
   font-size: 40px !important;
@@ -209,7 +219,8 @@ a {
 }
 
 .project-list {
-  height: 100vh;
+  grid-row: 2;
+  height: 100%;
   width: 100%;
 }
 
@@ -227,10 +238,7 @@ a {
 }
 
 .project-list .container {
-  position: absolute;
-  top: 150%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-top: 85px;
   height: min-content;
 }
 
@@ -275,13 +283,11 @@ a {
 
 .footer {
   color: var(--text-primary);
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   width: 100%;
+  margin-top: 10%;
   background-color: var(--bg-primary);
-  position: absolute;
-  top: 300vh;
-  left: 0;
   transition: 0.2s;
 }
 
@@ -296,20 +302,17 @@ a {
 }
 
 .footer p i {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .about .container {
-  position: absolute;
-  top: 250%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-top: 10%;
   height: min-content;
 }
 
 .about p {
-  font-size: 30px;
+  font-size: 1.4em;
   color: var(--text-primary);
 }
 
@@ -393,16 +396,13 @@ a {
     grid-template-columns: auto;
   }
 
-  .about .container {
-    position: absolute;
-    top: 340%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: min-content;
+  .grid-item {
+    text-align: center !important;
   }
 
-  .project-list .container {
-    top: 200vh;
+  .about .container {
+    padding: 80px 10%;
+    height: min-content;
   }
 
   .about p {
@@ -417,7 +417,22 @@ a {
     display: initial;
   }
 
-  .footer {
-    top: calc(200% + 180vh);
+  .footer p {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+}
+
+#bmc-wbtn {
+  transform: translateX(130%);
+  animation-name: left-in;
+  animation-delay: 5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes left-in {
+  to {
+    transform: translateX(0);
   }
 }
