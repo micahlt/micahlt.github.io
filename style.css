@@ -249,6 +249,8 @@ a {
 
 .project {
   transition: 0.3s;
+  display: flex;
+  justify-content: center;
 }
 
 .project a {
@@ -264,7 +266,7 @@ a {
 .project img {
   object-fit: cover;
   height: 150px;
-  width: 200px;
+  width: 100%;
   box-shadow: var(--image-shadow);
 }
 
@@ -386,9 +388,11 @@ a {
 
   .project-list {
     height: max-content;
+    grid-row: 3;
   }
 
   .about {
+    grid-row: 2;
     position: initial;
   }
 
