@@ -1,20 +1,27 @@
 :root {
   --text-primary: #212121;
-  --bg-primary: white;
-  --bg-secondary: lightgray;
+  --bg-primary: #ffffff;
+  --bg-secondary: #ececec;
   --logo-filter: brightness(1);
-  --image-shadow: 0 0.3em 0.8em rgba(0, 0, 0, 0.3);
+  --box-shadow: 0 0.9px 2.2px rgba(0, 0, 0, 0.02),
+  0 2.1px 5.3px rgba(0, 0, 0, 0.028),
+  0 3.9px 10px rgba(0, 0, 0, 0.035),
+  0 6.9px 17.9px rgba(0, 0, 0, 0.042),
+  0 13px 33.4px rgba(0, 0, 0, 0.05),
+  0 31px 80px rgba(0, 0, 0, 0.07)
+;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 1em;
 }
 
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: var(--bg-primary);
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: var(--bg-secondary);
   border-radius: 0;
 }
@@ -106,6 +113,7 @@ a {
   animation-fill-mode: forwards;
   animation-delay: 1.75s;
   background-color: var(--bg-primary);
+  animation-timing-function: cubic-bezier(.17,.67,.07,.92);
 }
 
 .nav-logo {
@@ -142,7 +150,7 @@ a {
 
 .nav-links a:hover {
   color: #ff3a3a;
-  transition: 0.25s;
+  transition: 0.15s;
 }
 
 .content {
@@ -185,11 +193,20 @@ a {
 .header-text h2 {
   font-size: 4.5em;
   font-weight: 500;
+  animation: zoom-in 0.65s cubic-bezier(.17,.67,.07,.92) 2.6s forwards;
+  opacity: 0;
 }
 
 .header-text h1 {
   font-size: 4.5em;
   color: #ff3a3a;
+  opacity: 0;
+  animation: zoom-in 0.65s cubic-bezier(.17,.67,.07,.92) 2.8s forwards;
+}
+
+.header-text p {
+  opacity: 0;
+  animation: fade-in 1s 3s forwards;
 }
 
 .header .container {
@@ -202,11 +219,13 @@ a {
   position: relative;
   top: 10vh;
   transition: 0.25s;
+  opacity: 0;
+  animation: fade-in 1s 3.2s forwards;
 }
 
 .icon-chevrons-down:hover {
   color: #ff3a3a;
-  transition: 0.25s;
+  transition: 0.15s;
 }
 
 .header-image {
@@ -215,7 +234,10 @@ a {
   top: 50%;
   transform: translateY(-50%);
   height: 65%;
-  box-shadow: var(--image-shadow);
+  box-shadow: var(--box-shadow);
+  opacity: 0;
+  border-radius: 0.2em;
+  animation: fade-in 0.65s 2.75s forwards;
 }
 
 .project-list {
@@ -226,7 +248,7 @@ a {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   width: 100%;
 }
 
@@ -243,31 +265,31 @@ a {
 }
 
 .project:hover {
-  transform: scale(1.03);
-  transition: 0.3s;
+  transform: scale(1.02);
+  transition: 0.25s cubic-bezier(.17,.67,.07,.92);
 }
 
 .project {
-  transition: 0.3s;
+  transition: 0.25s cubic-bezier(.17,.67,.07,.92);
   display: flex;
   justify-content: center;
 }
 
 .project a {
   color: var(--text-primary);
-  color: 0.3s;
 }
 
 .project a:hover {
   color: #ff3a3a;
-  transition: 0.3s;
+  transition: 0.22s;
 }
 
 .project img {
   object-fit: cover;
   height: 150px;
   width: 100%;
-  box-shadow: var(--image-shadow);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.2em;
 }
 
 .project-title {
@@ -281,6 +303,7 @@ a {
 .section-title {
   color: #ff3a3a;
   font-size: 4em;
+  margin-left: 18px;
 }
 
 .footer {
@@ -315,7 +338,12 @@ a {
 
 .about p {
   font-size: 1.4em;
-  color: var(--text-primary);
+  color: var(--bg-secondary);
+  margin: 20px;
+  padding: 8%;
+  background: var(--text-primary);
+  border-radius: 0.2em;
+  box-shadow: var(--box-shadow);
 }
 
 .about p a {
@@ -425,10 +453,14 @@ a {
     overflow-x: scroll;
     white-space: nowrap;
   }
+
+  #bmc-wbtn {
+    display: none !important;
+  }
 }
 
 #bmc-wbtn {
-  transform: translateX(130%);
+  transform: translateX(140%);
   animation-name: left-in;
   animation-delay: 5s;
   animation-duration: 1s;
@@ -438,5 +470,23 @@ a {
 @keyframes left-in {
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8) rotateX(50deg);
+  } to {
+    opacity: 1;
+    transform: scale(1) rotateX(0deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
   }
 }

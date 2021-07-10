@@ -4,8 +4,8 @@ if (!localStorage.getItem("darkmode")) {
 } else {
   if (localStorage.getItem("darkmode") == "true") {
     root.style.setProperty("--text-primary", "#fff");
-    root.style.setProperty("--bg-primary", "#212121");
-    root.style.setProperty("--bg-secondary", "#292929")
+    root.style.setProperty("--bg-primary", "#001219");
+    root.style.setProperty("--bg-secondary", "#021c26")
   }
 }
 document.getElementById('darkmode').addEventListener("click", function() {
