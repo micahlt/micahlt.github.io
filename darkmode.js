@@ -17,15 +17,3 @@ document.getElementById('darkmode').addEventListener("click", function() {
     window.location.reload();
   }
 })
-
-window.addEventListener("DOMContentLoaded", () => {
-  window.setTimeout(() => {
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: {
-        y: 0.6
-      }
-    });
-  }, 2700);
-});
