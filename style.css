@@ -57,7 +57,7 @@
 
 body {
   background-color: var(--bg-primary);
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   overflow-x: hidden;
 }
 
@@ -191,6 +191,7 @@ a {
 }
 
 .header-text h2 {
+  line-height: 0.6em;
   font-size: 4.5em;
   font-weight: 500;
   animation: zoom-in 0.65s cubic-bezier(.17,.67,.07,.92) 2.6s forwards;
@@ -273,6 +274,7 @@ a {
   transition: 0.25s cubic-bezier(.17,.67,.07,.92);
   display: flex;
   justify-content: center;
+  float: left;
 }
 
 .project a {
@@ -290,6 +292,7 @@ a {
   width: 100%;
   box-shadow: var(--box-shadow);
   border-radius: 0.2em;
+  aspect-ratio: 16 / 9;
 }
 
 .project-title {
@@ -390,6 +393,10 @@ a {
     display: none;
   }
 
+  .project {
+    float: none;
+  }
+
   .header-image {
     display: none;
   }
@@ -462,7 +469,7 @@ a {
 #bmc-wbtn {
   transform: translateX(140%);
   animation-name: left-in;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
