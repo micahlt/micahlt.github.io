@@ -2,12 +2,28 @@
 export default {
   title: "Column2",
   emits: ["hoverIn", "hoverOut"],
+  data() {
+    return {
+      front: true,
+    };
+  },
+  methods: {
+    flip() {
+      if (this.front) {
+        // flip to back
+        this.front = false;
+      } else {
+        // flip to front
+        this.front = true;
+      }
+    },
+  },
 };
 </script>
 
 <template>
   <div class="column">
-    <div class="rotating" @click="$router.push('/projects')">
+    <div :class="{ rotating: true, front: front, back: !front }" @click="flip">
       <img
         src="/assets/micahlt-static.png"
         class="static"
@@ -15,6 +31,12 @@ export default {
         @mouseleave="$emit('hoverOut')"
       />
       <img src="/assets/micahlt-rotate.png" class="rotate" />
+      <img
+        src="https://avatars.githubusercontent.com/u/28816297"
+        class="avatar"
+        @mouseenter="$emit('hoverIn')"
+        @mouseleave="$emit('hoverOut')"
+      />
     </div>
   </div>
 </template>
@@ -49,6 +71,7 @@ export default {
   position: absolute;
   max-width: 50vw;
   max-height: 30vh;
+  border-radius: 100%;
 }
 
 .static {
@@ -72,5 +95,22 @@ export default {
 
 .rotating:hover .rotate {
   animation-play-state: paused;
+}
+
+.avatar {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  position: absolute;
+  transition: 0.3s all;
+  max-width: 50vw;
+  max-height: 30vh;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.back .avatar {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transform-origin: top left;
 }
 </style>
