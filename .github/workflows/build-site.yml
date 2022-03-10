@@ -1,0 +1,36 @@
+name: Build Vite Site
+
+on: [push, pull_request]
+
+jobs:
+  prepare_tools:
+    name: Prepare tools for build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code from the current repository
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Reconfigure git to use HTTP
+        run: >
+          git config --global url."https://github.com/".insteadOf
+          ssh://git@github.com/
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+
+      - name: Install Vite and dependencies
+        run: npm install
+
+      - name: Build static site with Vite
+        run: npm run build
+
+      - name: Commit and push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          message: "Build site"
