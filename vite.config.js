@@ -7,5 +7,8 @@ export default defineConfig({
   plugins: [vue()],
   build: {
     outDir: path.join(__dirname, "docs"),
+    rollupOptions: {
+      external: ["src/styles/theme.css"],
+    },
   },
 });
