@@ -1,15 +1,20 @@
 <script>
 export default {
   title: "Column2",
-  emits: ['hoverIn', 'hoverOut']
-}
+  emits: ["hoverIn", "hoverOut"],
+};
 </script>
 
 <template>
   <div class="column">
     <div class="rotating" @click="$router.push('/projects')">
-      <img src="../assets/micahlt-static.png" class="static" @mouseenter="$emit('hoverIn')" @mouseleave="$emit('hoverOut')">
-      <img src="../assets/micahlt-rotate.png" class="rotate">
+      <img
+        src="/assets/micahlt-static.png"
+        class="static"
+        @mouseenter="$emit('hoverIn')"
+        @mouseleave="$emit('hoverOut')"
+      />
+      <img src="/assets/micahlt-rotate.png" class="rotate" />
     </div>
   </div>
 </template>
@@ -29,7 +34,7 @@ export default {
     height: 40vh;
   }
 }
-  
+
 .rotating {
   display: block;
   position: relative;
@@ -39,7 +44,8 @@ export default {
   animation-delay: 0.8s;
 }
 
-.rotate, .static {
+.rotate,
+.static {
   position: absolute;
   max-width: 50vw;
   max-height: 30vh;
@@ -49,7 +55,7 @@ export default {
   z-index: 1;
   transform: translate(-50%, -50%);
 }
-  
+
 .rotate {
   animation: rotate 90s infinite linear;
   transform-origin: top left;

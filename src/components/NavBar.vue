@@ -1,12 +1,36 @@
 <template>
   <nav>
     <div class="logo-left">
-    <router-link to="/" class="logo-link" @mouseenter="$emit('hoverIn')" @mouseleave="$emit('hoverOut')"><img src="../assets/micahlt-small.png" class="logo"></router-link>
+      <router-link
+        to="/"
+        class="logo-link"
+        @mouseenter="$emit('hoverIn')"
+        @mouseleave="$emit('hoverOut')"
+        ><img src="/assets/micahlt-small.png" class="logo"
+      /></router-link>
     </div>
     <div class="nav-links">
-      <router-link to="/" class="logo-link mobile-hidden" @mouseenter="$emit('hoverIn')" @mouseleave="$emit('hoverOut')">Home</router-link>
-      <router-link to="/projects" class="logo-link" @mouseenter="$emit('hoverIn')" @mouseleave="$emit('hoverOut')">Projects</router-link>
-      <router-link to="/contact" class="logo-link" @mouseenter="$emit('hoverIn')" @mouseleave="$emit('hoverOut')">Contact</router-link>
+      <router-link
+        to="/"
+        class="logo-link mobile-hidden"
+        @mouseenter="$emit('hoverIn')"
+        @mouseleave="$emit('hoverOut')"
+        >Home</router-link
+      >
+      <router-link
+        to="/projects"
+        class="logo-link"
+        @mouseenter="$emit('hoverIn')"
+        @mouseleave="$emit('hoverOut')"
+        >Projects</router-link
+      >
+      <router-link
+        to="/contact"
+        class="logo-link"
+        @mouseenter="$emit('hoverIn')"
+        @mouseleave="$emit('hoverOut')"
+        >Contact</router-link
+      >
     </div>
   </nav>
 </template>
@@ -14,13 +38,13 @@
 <script>
 export default {
   title: "NavBar",
-  emits: ['hoverIn', 'hoverOut'],
+  emits: ["hoverIn", "hoverOut"],
   methods: {
     open(u) {
       window.open(u);
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -28,7 +52,7 @@ nav {
   width: 100%;
   height: 4rem;
   background: var(--accent);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   z-index: 2;
   position: fixed;
   top: 0;
@@ -47,7 +71,8 @@ nav .logo:active {
   opacity: 0.5;
 }
 
-.logo-link, .logo-left {
+.logo-link,
+.logo-left {
   height: 50%;
 }
 

@@ -1,14 +1,14 @@
 <script>
-import Column1 from '../components/Column1.vue';
-import Column2 from '../components/Column2.vue';
+import Column1 from "../components/Column1.vue";
+import Column2 from "../components/Column2.vue";
 export default {
   title: "Home",
-  emits: ['hoverIn', 'hoverOut'],
+  emits: ["hoverIn", "hoverOut"],
   components: {
     Column1,
-    Column2
-  }
-}
+    Column2,
+  },
+};
 </script>
 
 <template>
