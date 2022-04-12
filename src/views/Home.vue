@@ -13,8 +13,8 @@ export default {
 
 <template>
   <div class="primary-grid">
-    <Column1 @hoverIn="$emit('hoverIn')" @hoverOut="$emit('hoverOut')" />
     <Column2 @hoverIn="$emit('hoverIn')" @hoverOut="$emit('hoverOut')" />
+    <Column1 @hoverIn="$emit('hoverIn')" @hoverOut="$emit('hoverOut')" />
   </div>
 </template>
 
