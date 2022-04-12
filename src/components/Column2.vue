@@ -58,8 +58,9 @@ export default {
 }
 
 .rotating {
-  display: block;
-  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   opacity: 0;
   transform: var(--animation-initial);
   animation: var(--animation);
@@ -68,28 +69,28 @@ export default {
 
 .rotate,
 .static {
-  position: absolute;
   max-width: 50vw;
   max-height: 30vh;
   border-radius: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
 }
 
 .static {
   z-index: 1;
-  transform: translate(-50%, -50%);
 }
 
 .rotate {
   animation: rotate 90s infinite linear;
-  transform-origin: top left;
+  transform-origin: center center;
 }
 
 @keyframes rotate {
   0% {
-    transform: rotate(0) translate(-50%, -50%);
+    transform: rotate(0);
   }
   100% {
-    transform: rotate(360deg) translate(-50%, -50%);
+    transform: rotate(360deg);
   }
 }
 
@@ -99,18 +100,19 @@ export default {
 
 .avatar {
   opacity: 0;
-  transform: translate(-50%, -50%) scale(0.5);
-  position: absolute;
   transition: 0.3s all;
+  transform: scale(0.1);
   max-width: 50vw;
   max-height: 30vh;
   border-radius: 100%;
   z-index: 2;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
 }
 
 .back .avatar {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: scale(1);
   transform-origin: top left;
 }
 </style>
