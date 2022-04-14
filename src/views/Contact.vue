@@ -217,6 +217,7 @@ input {
   font-size: 1.2rem;
   padding: 0.75rem;
   border: 2px solid var(--text-secondary);
+  background: var(--bg-primary);
   border-radius: 0.3rem;
   text-align: center;
   width: 73vw;
@@ -235,6 +236,7 @@ input:focus {
   width: max-content;
   margin: auto;
   margin-top: 5rem;
+  color: var(--text-primary);
 }
 
 .results-cover {
@@ -256,6 +258,8 @@ input:focus {
   text-decoration: none;
   transition: color 0.3s, fill 0.3s;
   align-items: center;
+  color: var(--text-primary);
+  fill: var(--text-primary);
 }
 
 .result:hover {

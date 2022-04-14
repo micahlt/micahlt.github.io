@@ -84,7 +84,7 @@ nav .logo:active {
 }
 
 .nav-links a {
-  color: white;
+  color: var(--bg-primary);
   text-decoration: none;
   text-transform: uppercase;
   margin-left: 1.75rem;
@@ -95,7 +95,7 @@ nav .logo:active {
   content: "";
   width: 112%;
   height: 0.5em;
-  background: white;
+  background: var(--bg-primary);
   opacity: 0.25;
   position: absolute;
   bottom: 0.1em;

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   cursor: none;
+  transition: 0.2s;
 }
 
 svg {
@@ -15,6 +16,7 @@ svg {
   --accent: #ff3a3a;
   --animation-initial: rotateX(50deg);
   --animation: dropIn 0.7s cubic-bezier(.04,.33,.1,1) forwards;
+  --cursor-color: #00c5c5;
 }
 
 :root.dark {
@@ -22,6 +24,7 @@ svg {
   --text-primary: #ffffff;
   --text-secondary: #8a8a8a;
   --accent: #ff3a3a;
+  --cursor-color: #ff5c5c;
 }
 
 @keyframes dropIn {
@@ -47,7 +50,7 @@ body:before {
   height: var(--size);
   border-radius: 50%;
   transform: var(--transform);
-  background: #00c5c5;
+  background: var(--cursor-color);
   mix-blend-mode: difference;
   pointer-events: none;
   transition: transform 0.2s ease-out;

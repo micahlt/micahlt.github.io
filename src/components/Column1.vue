@@ -191,15 +191,16 @@ p {
   transform: var(--animation-initial);
   animation: var(--animation);
   animation-delay: 0.2s;
+  color: var(--text-primary);
 }
 
 p > a {
-  color: black;
+  color: var(--text-primary);
   font-weight: 500;
 }
 
 .special-link {
-  color: #ff3a3a;
+  color: var(--accent);
 }
   
 .socials {
@@ -220,7 +221,7 @@ p > a {
 }
 
 .socials a:hover {
-  fill: #ff3a3a;
+  fill: var(--accent);
 }
   
 @media only screen and (max-width: 510px) {
