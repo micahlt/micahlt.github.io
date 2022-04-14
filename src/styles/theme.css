@@ -37,7 +37,7 @@ svg {
 
 body:before {
   content: "";
-  position: absolute;
+  position: fixed;
   z-index: 999;
   top: var(--y);
   left: var(--x);

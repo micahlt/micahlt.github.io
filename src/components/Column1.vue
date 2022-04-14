@@ -109,6 +109,7 @@ export default {
           to="/projects"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
+          class="special-link"
           >projects</router-link
         >
         or
@@ -116,6 +117,7 @@ export default {
           to="/contact"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
+          class="special-link"
           >get in touch</router-link
         >.
       </p>
@@ -164,9 +166,9 @@ export default {
 }
 
 .center {
-  margin: auto;
+  margin: 1rem auto;
   max-width: 480px;
-  padding: 1rem 4rem;
+  padding: 1rem 2.5rem;
 }
 
 h1 {
@@ -196,6 +198,10 @@ p > a {
   font-weight: 500;
 }
 
+.special-link {
+  color: #ff3a3a;
+}
+  
 .socials {
   margin-top: 1.5em;
   opacity: 0;
@@ -215,5 +221,11 @@ p > a {
 
 .socials a:hover {
   fill: #ff3a3a;
+}
+  
+@media only screen and (max-width: 510px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 </style>

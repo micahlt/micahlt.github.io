@@ -32,7 +32,7 @@ document.onscroll = updateProps;
 
 function updateProps() {
   document.body.style.setProperty('--x',(x)+'px');
-  document.body.style.setProperty('--y',(y + document.documentElement.scrollTop)+'px');
+  document.body.style.setProperty('--y',(y + document.documentElement.scrollTop - window.scrollY)+'px');
 }
 
 export default {
@@ -74,8 +74,11 @@ export default {
 }
   
 body {
-  overflow: hidden;
+  height: 100vh;
+  width: 100%;
   background: var(--bg-primary);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #bmc-wbtn {
@@ -87,9 +90,8 @@ body {
   font-family: 'Jost', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  overflow-y: auto;
   overflow-x: hidden;
 }
 
