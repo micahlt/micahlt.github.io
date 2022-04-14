@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   cursor: none;
-  transition: 0.2s;
 }
 
 svg {
@@ -68,6 +67,7 @@ body:before {
 
 ::-webkit-scrollbar {
   width: 0.7em;
+  background-color: var(--bg-primary);
 }
 
 ::-webkit-scrollbar-thumb {

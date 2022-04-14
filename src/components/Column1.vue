@@ -163,6 +163,7 @@ export default {
   display: grid;
   justify-content: center;
   align-items: center;
+  transition: background 0.2s;
 }
 
 .center {
@@ -192,11 +193,13 @@ p {
   animation: var(--animation);
   animation-delay: 0.2s;
   color: var(--text-primary);
+  transition: color 0.2s;
 }
 
 p > a {
-  color: var(--text-primary);
+  color: inherit;
   font-weight: 500;
+  transition: color 0s;
 }
 
 .special-link {
