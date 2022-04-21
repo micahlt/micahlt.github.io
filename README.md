@@ -1,7 +1,3 @@
-# My personal site
+# micahlindley.com
 
-This is a static site powered by Vite and Vue 3.  It uses Vue Router for navigation.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+This is a static site powered by Vite and Vue 3.  It uses Vue Router for navigation.  My main priorities here are **design** and **performance**.  I believe that I've acheived both.  The [GTMetrix web scan](https://gtmetrix.com/reports/micahlindley.com/GW4hoNcl/) recieived a performance score of **100%** with **zero** cumulative layout shift.  My own Lighthouse performance tests on my personal machine have come back with results **95%** and higher.  I wrote an article about why I chose Vue 3 and Vite for this site, which you can read [here](https://blog.micahlindley.com/finally-rebuilding-my-personal-site).  If you encounter any bugs, glitches, or issues please file an issue and I'll get back to you as soon as I can!
