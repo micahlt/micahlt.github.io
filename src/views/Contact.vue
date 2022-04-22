@@ -85,7 +85,7 @@ const platforms = [
   {
     name: "Google Play",
     icon: simpleIcons.Get("googleplay").svg,
-    url: "#",
+    url: "https://play.google.com/store/apps/dev?id=6956576600836460324",
   },
   {
     name: "Scrapbook",
