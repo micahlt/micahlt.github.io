@@ -85,7 +85,14 @@ export default {
           >Vite</a
         >.<br /><br />
         Aside from web development, I dabble in 3D design and do freelance
-        branding and print design. Every now and then you can find me making
+        branding and print design. I'm also on the
+        <a
+          href="https://memphishack.com/"
+          @mouseenter="$emit('hoverIn')"
+          @mouseleave="$emit('hoverOut')"
+          >Memphis Hack Club</a
+        >
+        leadership team.  Every now and then you can find me making
         <a
           href="https://soundcloud.com/micahlt"
           @mouseenter="$emit('hoverIn')"
