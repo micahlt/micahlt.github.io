@@ -56,7 +56,7 @@ const platforms = [
     name: "Polywork",
     icon: simpleIcons.Get("polywork").svg,
     url: "https://poly.work/micahlt",
-  }
+  },
   {
     name: "Coolors",
     icon: simpleIcons.Get("cloudera").svg,
