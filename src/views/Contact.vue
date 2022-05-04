@@ -53,6 +53,11 @@ const platforms = [
     url: "https://www.youtube.com/channel/UC6RTYK7Amqv6TpFsfDn-wnQ",
   },
   {
+    name: "Polywork",
+    icon: simpleIcons.Get("polywork").svg,
+    url: "https://poly.work/micahlt",
+  }
+  {
     name: "Coolors",
     icon: simpleIcons.Get("cloudera").svg,
     url: "https://coolors.co/u/micahlt",
