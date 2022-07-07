@@ -43,6 +43,12 @@ export default {
           >Vue</a
         >,
         <a
+          href="https://reactjs.org/"
+          @mouseenter="$emit('hoverIn')"
+          @mouseleave="$emit('hoverOut')"
+          >React</a
+        >,
+        <a
           href="https://svelte.dev/"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
@@ -61,10 +67,10 @@ export default {
           >Sass</a
         >,
         <a
-          href="https://cordova.apache.org/"
+          href="https://nativescript.org/"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >Cordova</a
+          >NativeScript</a
         >,
         <a
           href="https://www.electronjs.org/"
@@ -85,14 +91,21 @@ export default {
           >Vite</a
         >.<br /><br />
         Aside from web development, I dabble in 3D design and do freelance
-        branding and print design. I'm also on the
+        branding and print design. I work at 
         <a
-          href="https://memphishack.com/"
+          href="https://www.linkedin.com/company/epic-solutions-llc-/"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >Memphis Hack Club</a
+          >Epic Solutions</a
         >
-        leadership team.  Every now and then you can find me making
+        as webmaster and
+        <a
+          href="https://madebyspeak.com"
+          @mouseenter="$emit('hoverIn')"
+          @mouseleave="$emit('hoverOut')"
+          >Speak Creative</a
+        >
+        as an intern.  Every now and then you can find me making
         <a
           href="https://soundcloud.com/micahlt"
           @mouseenter="$emit('hoverIn')"
