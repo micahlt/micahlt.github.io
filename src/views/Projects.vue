@@ -45,10 +45,10 @@ const projects = [
     url: "https://sif.micahlindley.com",
   },
   {
-    name: "Memobox",
-    image: "/assets/projects/memobox.png",
-    subtitle: "Passive messaging for GitHub",
-    url: "https://memobox.vercel.app",
+    name: "Frigidus",
+    image: "/assets/projects/frigidus.png",
+    subtitle: "Tech news aggregate site",
+    url: "https://frigidus.micahlindley.com",
   },
   {
     name: "See more",
