@@ -98,14 +98,14 @@ export default {
           @mouseleave="$emit('hoverOut')"
           >Epic Solutions</a
         >
-        as webmaster and
+        as webmaster and I'm currently attending 
         <a
-          href="https://madebyspeak.com"
+          href="https://mc.edu"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >Speak Creative</a
+          >Mississippi College</a
         >
-        as an intern.  Every now and then you can find me making
+        studying graphic design.  When I have free time, you can find me making
         <a
           href="https://soundcloud.com/micahlt"
           @mouseenter="$emit('hoverIn')"
