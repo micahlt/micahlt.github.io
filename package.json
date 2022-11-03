@@ -8,12 +8,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "simple-icons": "^6.18.0",
-    "vue": "^3.2.32",
-    "vue-router": "^4.0.14"
+    "simple-icons": "^6.23.0",
+    "vue": "^3.2.41",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.1",
-    "vite": "^2.9.1"
+    "@vitejs/plugin-vue": "^2.3.4",
+    "vite": "^2.9.15"
   }
 }
