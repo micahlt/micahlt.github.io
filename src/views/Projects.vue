@@ -51,6 +51,12 @@ const projects = [
     url: "https://frigidus.micahlindley.com",
   },
   {
+    name: "TheCaf.me",
+    image: "/assets/projects/thecaf.png",
+    subtitle: "Info for the Caf at Mississippi College",
+    url: "https://thecaf.me",
+  },
+  {
     name: "See more",
     image: "/assets/projects/github.jpg",
     subtitle: "There's more on my GitHub profile!",
