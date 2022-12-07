@@ -13,8 +13,8 @@ svg {
   --text-primary: #222;
   --text-secondary: #8a8a8a;
   --accent: #ff3a3a;
-  --animation-initial: rotateX(50deg);
-  --animation: dropIn 0.7s cubic-bezier(.04,.33,.1,1) forwards;
+  --animation-initial: rotateX(50deg) scale(1.35);
+  --animation: dropIn 0.7s cubic-bezier(0.04, 0.33, 0.1, 1) forwards;
   --cursor-color: #00c5c5;
 }
 
@@ -44,7 +44,7 @@ body:before {
   top: var(--y);
   left: var(--x);
   right: 0;
-  bottom: 0; 
+  bottom: 0;
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
