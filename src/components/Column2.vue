@@ -573,6 +573,7 @@ export default {
         class="avatar"
         @mouseenter="$emit('hoverIn')"
         @mouseleave="$emit('hoverOut')"
+        @click="flip"
       />
     </div>
   </div>
@@ -639,15 +640,17 @@ export default {
 }
 
 .static {
-  z-index: 0;
+  z-index: 1;
   transform: scale(1.3);
   will-change: scale;
 }
 
 .rotate {
-  animation: rotate 90s infinite linear;
+  transform: rotate(0) scale(1.3);
+  animation: rotate-intro 2s 1 ease-out, rotate 90s 2s infinite linear;
   transform-origin: center center;
   will-change: scale;
+  z-index: 4;
 }
 
 @keyframes rotate {
@@ -655,7 +658,16 @@ export default {
     transform: rotate(0) scale(1.3);
   }
   100% {
-    transform: rotate(360deg) scale(1.3);
+    transform: rotate(960deg) scale(1.3);
+  }
+}
+
+@keyframes rotate-intro {
+  0% {
+    transform: rotate(0) scale(1.3);
+  }
+  100% {
+    transform: rotate(720deg) scale(1.3);
   }
 }
 
@@ -670,15 +682,16 @@ export default {
   max-width: 50vw;
   max-height: 30vh;
   border-radius: 100%;
-  z-index: 2;
+  z-index: 4;
   grid-row: 1 / 1;
   grid-column: 1 / 1;
 }
 
 .back .avatar {
+  z-index: 5;
   opacity: 1;
   transform: scale(1);
-  transform-origin: top left;
+  transform-origin: center center;
 }
 
 g[id] {

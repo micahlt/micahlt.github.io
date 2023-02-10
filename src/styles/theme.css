@@ -13,7 +13,7 @@ svg {
   --text-primary: #222;
   --text-secondary: #8a8a8a;
   --accent: #ff3a3a;
-  --animation-initial: rotateX(50deg) scale(1.35);
+  --animation-initial: rotateX(90deg) scale(1.35);
   --animation: dropIn 0.7s cubic-bezier(0.04, 0.33, 0.1, 1) forwards;
   --cursor-color: #00c5c5;
 }
