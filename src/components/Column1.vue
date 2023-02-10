@@ -91,21 +91,21 @@ export default {
           >Vite</a
         >.<br /><br />
         Aside from web development, I dabble in 3D design and do freelance
-        branding and print design. I work at 
+        branding and print design. I work at
         <a
           href="https://www.linkedin.com/company/epic-solutions-llc-/"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
           >Epic Solutions</a
         >
-        as webmaster and I'm currently attending 
+        as webmaster and I'm currently attending
         <a
           href="https://mc.edu"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
           >Mississippi College</a
         >
-        studying graphic design.  When I have free time, you can find me making
+        studying graphic design. When I have free time, you can find me making
         <a
           href="https://soundcloud.com/micahlt"
           @mouseenter="$emit('hoverIn')"
@@ -113,7 +113,7 @@ export default {
           >digital music</a
         >, producing a video for my
         <a
-          href="https://www.youtube.com/channel/UC6RTYK7Amqv6TpFsfDn-wnQ"
+          href="https://www.youtube.com/@micahlindley.com"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
           >YouTube channel</a
@@ -168,7 +168,7 @@ export default {
         ></a>
         <a
           v-html="i.youtube"
-          href="https://www.youtube.com/channel/UC6RTYK7Amqv6TpFsfDn-wnQ"
+          href="https://www.youtube.com/@micahlindley.com"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
         ></a>
@@ -225,7 +225,7 @@ p > a {
 .special-link {
   color: var(--accent);
 }
-  
+
 .socials {
   margin-top: 1.5em;
   opacity: 0;
@@ -246,7 +246,7 @@ p > a {
 .socials a:hover {
   fill: var(--accent);
 }
-  
+
 @media only screen and (max-width: 510px) {
   h1 {
     font-size: 2.5rem;

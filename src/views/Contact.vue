@@ -50,7 +50,7 @@ const platforms = [
   {
     name: "YouTube",
     icon: simpleIcons.Get("youtube").svg,
-    url: "https://www.youtube.com/channel/UC6RTYK7Amqv6TpFsfDn-wnQ",
+    url: "https://www.youtube.com/@micahlindley",
   },
   {
     name: "Polywork",
