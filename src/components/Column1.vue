@@ -91,21 +91,15 @@ export default {
           >Vite</a
         >.<br /><br />
         Aside from web development, I dabble in 3D design and do freelance
-        branding and print design. I work at
-        <a
-          href="https://www.linkedin.com/company/epic-solutions-llc-/"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          >Epic Solutions</a
-        >
-        as webmaster and I'm currently attending
+        branding and print design. I'm currently attending
         <a
           href="https://mc.edu"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
           >Mississippi College</a
         >
-        studying graphic design. When I have free time, you can find me making
+        studying computer information systems. When I have free time, you can
+        find me making
         <a
           href="https://soundcloud.com/micahlt"
           @mouseenter="$emit('hoverIn')"
@@ -117,13 +111,14 @@ export default {
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
           >YouTube channel</a
-        >, or writing a post for my
+        >, or hosting an episode of
         <a
-          href="https://blog.micahlindley.com/"
+          href="https://bio.link/tnc"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >blog.</a
-        ><br /><br />
+          >The New Creators</a
+        >
+        podcast.<br /><br />
         While you're here, feel free to check out my
         <router-link
           to="/projects"
