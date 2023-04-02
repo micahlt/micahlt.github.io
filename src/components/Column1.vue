@@ -107,7 +107,7 @@ export default {
           >digital music</a
         >, producing a video for my
         <a
-          href="https://www.youtube.com/@micahlindley.com"
+          href="https://www.youtube.com/@micahlindley"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
           >YouTube channel</a
