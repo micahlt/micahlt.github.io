@@ -3,6 +3,18 @@ import NavBar from "../components/NavBar.vue";
 let images = [];
 const projects = [
   {
+    name: "The Caf App",
+    image: "/assets/projects/thecaf.png",
+    subtitle: "Info for the Caf at Mississippi College",
+    url: "https://thecaf.app",
+  },
+  {
+    name: "Caf Data",
+    image: "/assets/projects/cafdata.png",
+    subtitle: "Historical caf rating analysis",
+    url: "https://data.thecaf.app",
+  },
+  {
     name: "Itchy",
     image: "/assets/projects/itchy.png",
     subtitle: "A mobile app for Scratch",
@@ -15,16 +27,22 @@ const projects = [
     url: "https://vesper.micahlindley.com",
   },
   {
+    name: "SmarterBook",
+    image: "/assets/projects/smarterbook.png",
+    subtitle: "Finish SmartBooks assignments faster",
+    url: "https://chromewebstore.google.com/detail/smarterbook/jikphdlhfedfoblcfdjaibhaanofgihd",
+  },
+  {
+    name: "wasteof for Android",
+    image: "/assets/projects/wasteof.png",
+    subtitle: "Mobile client for wasteof.money",
+    url: "https://play.google.com/store/apps/details?id=com.micahlindley.wasteofmobile",
+  },
+  {
     name: "Modchat",
     image: "/assets/projects/modchat.jpg",
     subtitle: "Moderated chat platform",
     url: "https://modchat.micahlindley.com",
-  },
-  {
-    name: "ReplCast",
-    image: "/assets/projects/replcast.png",
-    subtitle: "Share live coding sessions",
-    url: "https://replcast.micahlindley.com",
   },
   {
     name: "DOMPong",
@@ -33,28 +51,10 @@ const projects = [
     url: "https://dompong.micahlindley.com",
   },
   {
-    name: "Latinifier",
-    image: "/assets/projects/latinifier.png",
-    subtitle: "Study tool for Latin students",
-    url: "https://chrome.google.com/webstore/detail/latinifier-plus/fjdbdeljjiadfhnofngfjkbblekcgnlp",
-  },
-  {
     name: "Scratch Import Fixer",
     image: "/assets/projects/sif.png",
     subtitle: "Fix SVGs created in Affinity",
     url: "https://sif.micahlindley.com",
-  },
-  {
-    name: "Frigidus",
-    image: "/assets/projects/frigidus.png",
-    subtitle: "Tech news aggregate site",
-    url: "https://frigidus.micahlindley.com",
-  },
-  {
-    name: "The Caf App",
-    image: "/assets/projects/thecaf.png",
-    subtitle: "Info for the Caf at Mississippi College",
-    url: "https://thecaf.app",
   },
   {
     name: "See more",
