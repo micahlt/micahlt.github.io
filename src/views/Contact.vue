@@ -38,6 +38,16 @@ const platforms = [
     url: "https://behance.net/micahlt",
   },
   {
+    name: "YouTube",
+    icon: simpleIcons.Get("youtube").svg,
+    url: "https://www.youtube.com/@micahlindley",
+  },
+  {
+    name: "Stack Overflow",
+    icon: simpleIcons.Get("stackoverflow").svg,
+    url: "https://stackoverflow.com/users/10806546/micahlt",
+  },
+  {
     name: "Hashnode",
     icon: simpleIcons.Get("hashnode").svg,
     url: "https://blog.micahlindley.com",
@@ -46,16 +56,6 @@ const platforms = [
     name: "DEV",
     icon: simpleIcons.Get("devdotto").svg,
     url: "https://dev.to/@micahlt",
-  },
-  {
-    name: "YouTube",
-    icon: simpleIcons.Get("youtube").svg,
-    url: "https://www.youtube.com/@micahlindley",
-  },
-  {
-    name: "Polywork",
-    icon: simpleIcons.Get("polywork").svg,
-    url: "https://poly.work/micahlt",
   },
   {
     name: "Coolors",
@@ -68,19 +68,9 @@ const platforms = [
     url: "https://scratch.mit.edu/users/-Archon-",
   },
   {
-    name: "Stack Overflow",
-    icon: simpleIcons.Get("stackoverflow").svg,
-    url: "https://stackoverflow.com/users/10806546/micahlt",
-  },
-  {
     name: "Spotify",
     icon: simpleIcons.Get("spotify").svg,
     url: "https://open.spotify.com/user/dq8tewx9swt2rytgq6knkwloe",
-  },
-  {
-    name: "Trello",
-    icon: simpleIcons.Get("trello").svg,
-    url: "https://trello.com/micahlt/",
   },
   {
     name: "NPM",
@@ -91,21 +81,6 @@ const platforms = [
     name: "Google Play",
     icon: simpleIcons.Get("googleplay").svg,
     url: "https://play.google.com/store/apps/dev?id=6956576600836460324",
-  },
-  {
-    name: "Scrapbook",
-    icon: simpleIcons.Get("hackclub").svg,
-    url: "https://scrapbook.hackclub.com/micahlt",
-  },
-  {
-    name: "Ask Ubuntu",
-    icon: simpleIcons.Get("askubuntu").svg,
-    url: "https://askubuntu.com/users/905370/micah-lindley",
-  },
-  {
-    name: "JSFiddle",
-    icon: simpleIcons.Get("jsfiddle").svg,
-    url: "https://jsfiddle.net/user/micahlt",
   },
   {
     name: "Codepen",
@@ -121,11 +96,6 @@ const platforms = [
     name: "Local Guides",
     icon: simpleIcons.Get("googlemaps").svg,
     url: "https://www.google.com/maps/contrib/109067581520057374776",
-  },
-  {
-    name: "Khan Academy",
-    icon: simpleIcons.Get("khanacademy").svg,
-    url: "https://www.khanacademy.org/profile/me/",
   },
 ];
 export default {
