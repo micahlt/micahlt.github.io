@@ -30,7 +30,7 @@ const projects = [
     name: "SmarterBook",
     image: "/assets/projects/smarterbook.png",
     subtitle: "Finish SmartBooks assignments faster",
-    url: "https://chromewebstore.google.com/detail/smarterbook/jikphdlhfedfoblcfdjaibhaanofgihd",
+    url: "https://twitter.com/micahtlindley/status/1756092888566358403",
   },
   {
     name: "wasteof for Android",
