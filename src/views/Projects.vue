@@ -27,10 +27,10 @@ const projects = [
     url: "https://vesper.micahlindley.com",
   },
   {
-    name: "SmarterBook",
-    image: "/assets/projects/smarterbook.png",
-    subtitle: "Finish SmartBooks assignments faster",
-    url: "https://twitter.com/micahtlindley/status/1756092888566358403",
+    name: "TzDB",
+    image: "/assets/projects/tzdb.png",
+    subtitle: "Tz'utujil language database",
+    url: "https://tzdb.micahlindley.com",
   },
   {
     name: "wasteof for Android",
