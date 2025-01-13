@@ -23,7 +23,7 @@ export default {
       <h1>Hi, I'm Micah</h1>
       <p>
         I've been building things on the Internet since 2015, and I'm
-        experienced with multiple web languages and frameworks like
+        experienced with languages and frameworks like
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
           @mouseenter="$emit('hoverIn')"

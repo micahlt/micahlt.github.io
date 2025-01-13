@@ -629,14 +629,14 @@ export default {
 
 .rotate,
 .static {
-  max-width: 50vw;
-  max-height: 30vh;
+  max-width: 60vw;
+  max-height: 40vh;
   border-radius: 100%;
   grid-row: 1 / 1;
   grid-column: 1 / 1;
   pointer-events: fill;
-  height: auto;
-  width: auto;
+  height: 40vh;
+  width: 40vh;
 }
 
 .static {
