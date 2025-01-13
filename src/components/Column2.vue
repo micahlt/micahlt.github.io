@@ -61,7 +61,11 @@ export default {
         d="M12.048 21.963c-.308 0-.618-.015-.93-.043-2.66-.246-5.064-1.513-6.771-3.567s-2.512-4.651-2.266-7.311a10.004 10.004 0 0 1 9.038-9.038 1 1 0 0 1 .896 1.589 6.008 6.008 0 0 0 1.258 8.392c2.078 1.536 5.055 1.536 7.133 0a1 1 0 0 1 1.591.896 9.951 9.951 0 0 1-9.949 9.082zM9.315 4.438a8.006 8.006 0 0 0-5.244 6.787 7.954 7.954 0 0 0 1.813 5.849 7.95 7.95 0 0 0 5.417 2.854 7.95 7.95 0 0 0 8.266-5.243 8.01 8.01 0 0 1-2.729.476 7.946 7.946 0 0 1-4.755-1.565C9.174 11.443 8.145 7.68 9.315 4.438z"
       ></path>
     </svg>
-    <div :class="{ rotating: true, front: front, back: !front }">
+    <div
+      :class="{ rotating: true, front: front, back: !front }"
+      @mouseenter="flip"
+      @mouseleave="flip"
+    >
       <svg
         width="100%"
         height="100%"
@@ -571,9 +575,6 @@ export default {
       <img
         src="https://avatars.githubusercontent.com/u/28816297"
         class="avatar"
-        @mouseenter="$emit('hoverIn')"
-        @mouseleave="$emit('hoverOut')"
-        @click="flip"
       />
     </div>
   </div>
