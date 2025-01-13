@@ -698,4 +698,12 @@ export default {
 g[id] {
   cursor: pointer;
 }
+
+g[id] > path {
+  transition: fill-opacity 0.2s;
+}
+
+g[id]:hover > path {
+  fill-opacity: 1 !important;
+}
 </style>
