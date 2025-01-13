@@ -4,15 +4,15 @@ let images = [];
 const projects = [
   {
     name: "The Caf App",
-    image: "/assets/projects/thecaf.png",
+    image: "/assets/projects/thecafapp.png",
     subtitle: "Info for the Caf at Mississippi College",
     url: "https://thecaf.app",
   },
   {
-    name: "Caf Data",
-    image: "/assets/projects/cafdata.png",
-    subtitle: "Historical caf rating analysis",
-    url: "https://data.thecaf.app",
+    name: "Offsides",
+    image: "/assets/projects/offsides.png",
+    subtitle: "A YikYak client for Android",
+    url: "https://offsides.micahlindley.com",
   },
   {
     name: "Itchy",
@@ -27,22 +27,22 @@ const projects = [
     url: "https://vesper.micahlindley.com",
   },
   {
-    name: "TzDB",
+    name: "Caf Data",
+    image: "/assets/projects/cafdata.png",
+    subtitle: "Historical caf rating analysis",
+    url: "https://data.thecaf.app",
+  },
+  {
+    name: "Tzutujil.org",
     image: "/assets/projects/tzdb.png",
-    subtitle: "Tz'utujil language database",
-    url: "https://tzdb.micahlindley.com",
+    subtitle: "Maya Tz'utujil language dictionary",
+    url: "https://tzutujil.org",
   },
   {
     name: "wasteof for Android",
     image: "/assets/projects/wasteof.png",
     subtitle: "Mobile client for wasteof.money",
     url: "https://play.google.com/store/apps/details?id=com.micahlindley.wasteofmobile",
-  },
-  {
-    name: "Modchat",
-    image: "/assets/projects/modchat.jpg",
-    subtitle: "Moderated chat platform",
-    url: "https://modchat.micahlindley.com",
   },
   {
     name: "DOMPong",
@@ -112,22 +112,18 @@ export default {
     <NavBar @hoverIn="$emit('hoverIn')" @hoverOut="$emit('hoverOut')" />
     <div class="project-grid">
       <a
-        class="project-link"
+        class="project"
         :href="p.url"
         @click.prevent
         v-for="p in projects"
+        @mouseenter="$emit('hoverIn')"
+        @mouseleave="$emit('hoverOut')"
+        @click="open(p.url)"
       >
-        <div
-          class="project"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          @click="open(p.url)"
-        >
-          <img :src="p.image" class="project-image" v-if="loaded" />
-          <div class="project-image skeleton" v-else></div>
-          <h2>{{ p.name }}</h2>
-          <p>{{ p.subtitle }}</p>
-        </div>
+        <img :src="p.image" class="project-image" v-if="loaded" />
+        <div class="project-image skeleton" v-else></div>
+        <h2>{{ p.name }}</h2>
+        <p>{{ p.subtitle }}</p>
       </a>
     </div>
   </main>
@@ -144,17 +140,20 @@ export default {
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  width: 95vw;
-  margin: 2.5vw;
-  margin-top: 4rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 3rem);
+  flex-wrap: wrap;
+  width: calc(100vw - 2rem);
+  margin: 1rem;
+  margin-top: 6rem;
 }
 
 .project {
-  margin: auto;
-  margin-top: 2rem;
   cursor: inherit;
+  text-decoration: none;
+  width: max-content;
 }
 
 .project-image {
@@ -240,10 +239,6 @@ export default {
 
 .project p {
   color: var(--text-secondary);
-}
-
-.project-link {
-  text-decoration: none;
 }
 
 .background {

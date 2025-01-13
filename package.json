@@ -9,11 +9,11 @@
   },
   "dependencies": {
     "simple-icons": "^6.23.0",
-    "vue": "^3.2.41",
-    "vue-router": "^4.1.6"
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.4",
-    "vite": "^2.9.17"
+    "vite": "^2.9.18"
   }
 }
