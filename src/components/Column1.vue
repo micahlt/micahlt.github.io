@@ -163,7 +163,7 @@ export default {
         ></a>
         <a
           v-html="i.youtube"
-          href="https://www.youtube.com/@micahlindley.com"
+          href="https://www.youtube.com/@micahlindley"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
         ></a>

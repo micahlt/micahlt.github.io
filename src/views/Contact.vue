@@ -80,7 +80,7 @@ const platforms = [
   {
     name: "Google Play",
     icon: simpleIcons.Get("googleplay").svg,
-    url: "https://play.google.com/store/apps/dev?id=6956576600836460324",
+    url: "https://play.google.com/store/apps/dev?id=5310590307529513589",
   },
   {
     name: "Codepen",
