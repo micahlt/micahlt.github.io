@@ -110,7 +110,7 @@ nav .logo:active {
 
   nav .logo {
     height: 40%;
-    margin-top: 1.25rem;
+    margin-top: 1.15rem;
   }
 }
 </style>

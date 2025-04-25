@@ -301,9 +301,6 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1680px) {
-}
-
 @media only screen and (max-width: 1360px) {
   .project-grid {
     height: max-content;
