@@ -4,63 +4,66 @@ let images = [];
 const projects = [
   {
     name: "The Caf App",
-    image: "/assets/projects/thecafapp.png",
+    image: "/assets/projects/thecafapp.svg",
     subtitle: "Info for the Caf at Mississippi College",
     url: "https://thecaf.app",
+    color: "#0b1d3c",
   },
   {
     name: "Offsides",
-    image: "/assets/projects/offsides.png",
+    image: "/assets/projects/offsides.svg",
     subtitle: "A YikYak client for Android",
     url: "https://offsides.micahlindley.com",
+    color: "#3ddc84",
   },
   {
     name: "Itchy",
-    image: "/assets/projects/itchy.png",
+    image: "/assets/projects/itchy.svg",
     subtitle: "A mobile app for Scratch",
     url: "https://itchy.micahlindley.com",
-  },
-  {
-    name: "Vesper",
-    image: "/assets/projects/vesper.png",
-    subtitle: "Easy and fast YouTube downloader",
-    url: "https://vesper.micahlindley.com",
-  },
-  {
-    name: "Caf Data",
-    image: "/assets/projects/cafdata.png",
-    subtitle: "Historical caf rating analysis",
-    url: "https://data.thecaf.app",
+    color: "#0082ff",
   },
   {
     name: "Tzutujil.org",
-    image: "/assets/projects/tzdb.png",
+    image: "/assets/projects/tzutujil.svg",
     subtitle: "Maya Tz'utujil language dictionary",
     url: "https://tzutujil.org",
+    color: "black",
   },
   {
     name: "wasteof for Android",
-    image: "/assets/projects/wasteof.png",
+    image: "/assets/projects/wasteof.svg",
     subtitle: "Mobile client for wasteof.money",
     url: "https://play.google.com/store/apps/details?id=com.micahlindley.wasteofmobile",
+    color: "#191b42",
+  },
+  {
+    name: "Glyde",
+    image: "/assets/projects/glyde.svg",
+    subtitle: "Web-based lyric presentation software (beta)",
+    url: "https://glyde.micahlindley.com",
+    color: "#4D97FF",
+  },
+  {
+    name: "Vesper",
+    image: "/assets/projects/vesper.svg",
+    subtitle: "Easy and fast YouTube downloader",
+    url: "https://vesper.micahlindley.com",
+    color: "#0e0c12",
+  },
+  {
+    name: "Caf Data",
+    image: "/assets/projects/cafdata.svg",
+    subtitle: "Historical caf rating analysis",
+    url: "https://data.thecaf.app",
+    color: "black",
   },
   {
     name: "DOMPong",
-    image: "/assets/projects/dompong.png",
+    image: "/assets/projects/dompong.svg",
     subtitle: "Pong clone in HTML, no canvas",
     url: "https://dompong.micahlindley.com",
-  },
-  {
-    name: "Scratch Import Fixer",
-    image: "/assets/projects/sif.png",
-    subtitle: "Fix SVGs created in Affinity",
-    url: "https://sif.micahlindley.com",
-  },
-  {
-    name: "See more",
-    image: "/assets/projects/github.jpg",
-    subtitle: "There's more on my GitHub profile!",
-    url: "https://github.com/micahlt",
+    color: "#000000",
   },
 ];
 export default {
@@ -72,7 +75,7 @@ export default {
   data() {
     return {
       projects,
-      loaded: false,
+      loaded: true,
     };
   },
   mounted() {
@@ -107,7 +110,6 @@ export default {
 
 <template>
   <main>
-    <h1 class="background">Projects</h1>
     <img src="/assets/micahlt-rotate.png" class="spinner rotate" />
     <NavBar @hoverIn="$emit('hoverIn')" @hoverOut="$emit('hoverOut')" />
     <div class="project-grid">
@@ -119,11 +121,20 @@ export default {
         @mouseenter="$emit('hoverIn')"
         @mouseleave="$emit('hoverOut')"
         @click="open(p.url)"
+        :style="`background: ${p.color}`"
       >
         <img :src="p.image" class="project-image" v-if="loaded" />
         <div class="project-image skeleton" v-else></div>
-        <h2>{{ p.name }}</h2>
         <p>{{ p.subtitle }}</p>
+      </a>
+      <a
+        class="project github"
+        href="https://github.com/micahlt"
+        @mouseenter="$emit('hoverIn')"
+        @mouseleave="$emit('hoverOut')"
+        target="_blank"
+      >
+        <h2>See more on my <span class="underline">GitHub</span></h2>
       </a>
     </div>
   </main>
@@ -137,33 +148,54 @@ export default {
   width: 17rem;
   max-width: 30vw;
   transform: translate(50%, -50%);
+  z-index: 2;
 }
 
 .project-grid {
+  height: calc(100vh - 4rem);
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: stretch;
   justify-content: center;
-  gap: clamp(1rem, 3vw, 3rem);
   flex-wrap: wrap;
-  width: calc(100vw - 2rem);
-  margin: 1rem;
-  margin-top: 6rem;
+  width: 100%;
+  margin-top: 4rem;
+  overflow: hidden;
 }
 
 .project {
+  display: flex;
   cursor: inherit;
   text-decoration: none;
-  width: max-content;
+  width: 100%;
+  flex-grow: 1;
+  transition: 0.75s all;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.project > p {
+  color: white !important;
+  opacity: 0;
+  transition: 0.15s opacity;
+  padding-left: 2rem;
+  width: calc(100% - 4rem);
+}
+
+.project:hover > p {
+  opacity: 0.8 !important;
+  transition: 0.15s opacity;
 }
 
 .project-image {
-  max-width: 20rem;
-  max-height: 15rem;
-  aspect-ratio: 20 / 15;
-  object-fit: cover;
+  max-height: 4rem;
+  height: 8vh;
   border-radius: 0.3rem;
   transition: 0.2s;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .project-image.skeleton {
@@ -196,9 +228,24 @@ export default {
   }
 }
 
-.project:hover .project-image {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  filter: grayscale(1);
+.project:hover {
+  flex-grow: 15;
+  transition: 0.25s all;
+  padding-top: 1rem;
+}
+
+.project:hover > .project-image {
+  height: 100%;
+  max-height: 10vh !important;
+}
+
+.project-grid:hover > .project:not(:hover) {
+  filter: brightness(0.4) grayscale(1);
+  flex-grow: 0;
+}
+
+.project-grid:hover > .project:not(:hover) > img {
+  max-height: 4rem;
 }
 
 .rotate {
@@ -212,21 +259,7 @@ export default {
   margin-right: 0;
   width: max-content;
   transition: color 0.2s;
-}
-
-.project h2:before {
-  content: "";
-  display: block;
-  background: var(--accent);
-  max-height: 0;
-  position: absolute;
-  bottom: 0.2em;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 0.1em;
-  transition: max-height 0.2s;
-  z-index: -1;
+  font-size: 2.5rem;
 }
 
 .project:hover h2 {
@@ -238,19 +271,25 @@ export default {
 }
 
 .project p {
-  color: var(--text-secondary);
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  text-align: center;
 }
 
-.background {
-  color: var(--accent);
-  position: fixed;
-  z-index: -1;
-  bottom: 0;
-  left: 2rem;
-  font-size: 30vh;
-  opacity: 0.1;
-  transform: skewX(-10deg);
-  user-select: none;
+.project.github {
+  background: var(--accent);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.project.github h2 {
+  margin: auto;
+  opacity: 1 !important;
+  font-size: 1.5rem;
 }
 
 @keyframes rotate {
@@ -263,52 +302,44 @@ export default {
 }
 
 @media only screen and (max-width: 1680px) {
-  .project-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
 }
 
 @media only screen and (max-width: 1360px) {
   .project-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    height: max-content;
+  }
+
+  .project {
+    height: max-content;
+    padding: 3em 0;
+    padding-bottom: 4rem;
+  }
+
+  .project > p {
+    opacity: 1;
+    font-size: 1rem;
+  }
+
+  .project:last-of-type {
+    padding-bottom: 6rem;
   }
 
   .spinner {
     display: none;
   }
+
+  .underline {
+    text-decoration: underline;
+  }
 }
 
 @media only screen and (max-width: 1041px) {
-  .project-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .project-link:last-of-type {
-    margin-bottom: 4rem;
-  }
-
   .spinner {
     display: none;
   }
 }
 
 @media only screen and (max-width: 735px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-    margin-top: 6rem;
-  }
-
-  .project {
-    width: max-content;
-    margin: auto;
-    margin-bottom: 1rem;
-  }
-
-  .project-image {
-    width: 80vw !important;
-    height: 11rem;
-  }
-
   .spinner {
     display: none;
   }

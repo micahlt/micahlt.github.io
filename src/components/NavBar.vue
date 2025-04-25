@@ -107,5 +107,10 @@ nav .logo:active {
   .mobile-hidden {
     display: none;
   }
+
+  nav .logo {
+    height: 40%;
+    margin-top: 1.25rem;
+  }
 }
 </style>
