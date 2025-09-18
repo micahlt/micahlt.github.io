@@ -246,7 +246,7 @@ export default {
                   id="MUSICIAN"
                   @mouseenter="$emit('hoverIn')"
                   @mouseleave="$emit('hoverOut')"
-                  @click="g('https://soundcloud.com/micahlt')"
+                  @click="g('https://thebrokenhalos.band')"
                 >
                   <g
                     transform="matrix(-1.98392,-2.3825,2.3825,-1.98392,1831.69,2674.36)"
@@ -406,7 +406,7 @@ export default {
                   serif:id="MUSICIAN"
                   @mouseenter="$emit('hoverIn')"
                   @mouseleave="$emit('hoverOut')"
-                  @click="g('https://soundcloud.com/micahlt')"
+                  @click="g('https://thebrokenhalos.band')"
                 >
                   <g
                     transform="matrix(-1.98392,-2.3825,2.3825,-1.98392,1831.69,2674.36)"
