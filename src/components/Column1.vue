@@ -31,22 +31,16 @@ export default {
           >JavaScript</a
         >,
         <a
-          href="https://ionicframework.com/"
+          href="https://reactjs.org/"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >Ionic</a
+          >React</a
         >,
         <a
           href="https://vuejs.org"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
           >Vue</a
-        >,
-        <a
-          href="https://reactjs.org/"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          >React</a
         >,
         <a
           href="https://svelte.dev/"
@@ -70,7 +64,7 @@ export default {
           href="https://nativescript.org/"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >NativeScript</a
+          >.NET</a
         >,
         <a
           href="https://www.electronjs.org/"
@@ -91,7 +85,7 @@ export default {
           >Vite</a
         >.<br /><br />
         Aside from web development, I dabble in 3D design and do freelance
-        branding and print design. I'm currently attending
+        branding and print design. I'm currently a senior at 
         <a
           href="https://mc.edu"
           @mouseenter="$emit('hoverIn')"
@@ -99,12 +93,12 @@ export default {
           >Mississippi College</a
         >
         studying computer information systems. When I have free time, you can
-        find me making
+        find me playing bass in 
         <a
-          href="https://soundcloud.com/micahlt"
+          href="https://thebrokenhalos.band"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >digital music</a
+          >The Broken Halos</a
         >, producing a video for my
         <a
           href="https://www.youtube.com/@micahlindley"
