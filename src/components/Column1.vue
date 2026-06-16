@@ -85,15 +85,21 @@ export default {
           >Vite</a
         >.<br /><br />
         Aside from web development, I dabble in 3D design and do freelance
-        branding and print design. I'm currently a senior at 
+        branding and print design. I'm currently a Platforms Developer at 
+        <a
+          href="https://madebyspeak.com"
+          @mouseenter="$emit('hoverIn')"
+          @mouseleave="$emit('hoverOut')"
+          >Speak Creative</a
+        >.
+        I hold a Bachelor of Science in Computing & Information Systems from 
         <a
           href="https://mc.edu"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >Mississippi College</a
-        >
-        studying computer information systems. When I have free time, you can
-        find me playing bass in 
+          >Mississippi Christian University</a
+        >. 
+        When I have free time, you can find me playing bass in 
         <a
           href="https://thebrokenhalos.band"
           @mouseenter="$emit('hoverIn')"
